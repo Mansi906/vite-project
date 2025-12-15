@@ -1,0 +1,147 @@
+/* Container */
+.home-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background: #ffffff;
+  font-family: 'Arial', sans-serif;
+}
+
+@media (min-width: 768px) {
+  .home-container {
+    flex-direction: row;
+  }
+}
+
+/* LEFT SIDE */
+.left-side {
+  flex: 1;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 25px;
+}
+
+.title {
+  font-size: 3.2rem;
+  font-weight: 800; /* bold */
+  color: #000;
+}
+
+.subtitle {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #333;
+}
+
+/* Inputs */
+.inputs input {
+  width: 100%;
+  padding: 18px;
+  font-size: 1.1rem;
+  font-weight: 500;
+  border-radius: 12px;
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+}
+
+.inputs input:focus {
+  border-color: #facc15; /* Uber Yellow */
+  box-shadow: 0 0 6px rgba(250, 204, 21, 0.5);
+  outline: none;
+}
+
+/* Suggested Locations */
+.suggestions h4 {
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.suggestions-list {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.suggestion-btn {
+  padding: 8px 15px;
+  border-radius: 12px;
+  border: none;
+  background-color: #000;
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.suggestion-btn:hover {
+  background-color: #333;
+  transform: scale(1.05);
+}
+
+/* Ride Cards */
+.ride-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.ride-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px;
+  background: #f0f0f0;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-weight: 600;
+}
+
+.ride-card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.ride-card.selected {
+  background: #facc15;
+  color: #000;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.25);
+}
+
+/* Confirm Button */
+.confirm-btn {
+  display: block;
+  text-align: center;
+  padding: 18px;
+  background: linear-gradient(90deg, #000, #facc15);
+  color: #fff;
+  font-weight: 700;
+  font-size: 1.25rem;
+  border-radius: 15px;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.confirm-btn:hover {
+  transform: scale(1.05);
+  background: linear-gradient(90deg, #333, #fcd34d);
+}
+
+/* RIGHT SIDE IMAGE */
+.right-side {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.side-image {
+  width: 100%;
+  max-width: 450px;
+  border-radius: 20px;
+  object-fit: cover;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}

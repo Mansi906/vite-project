@@ -1,0 +1,14 @@
+@import "tailwindcss";
+  @tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* index.css */
+@import url("https://unpkg.com/leaflet/dist/leaflet.css");
+
+input {
+  font-family: 'Inter', sans-serif;
+}
+
+button, a {
+  font-family: 'Inter', sans-serif;
+}

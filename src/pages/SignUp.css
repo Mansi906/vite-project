@@ -1,0 +1,90 @@
+/* Full Page Centering */
+.signup-container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 70px;
+background: url("https://images.pexels.com/photos/2093323/pexels-photo-2093323.jpeg") no-repeat center center / cover;
+}
+
+/* Glass Card */
+.signup-card {
+  width: 450px;
+  padding: 40px 35px;
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  border-radius: 18px;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.45);
+  animation: fadeIn 0.9s ease;
+}
+
+/* Title */
+.form-title {
+  text-align: center;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     
+  color: #ffffff;
+  font-size: 27px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+/* AntD Label */
+.ant-form-item-label > label {
+  color: #f1f1f1 !important;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+/* Inputs */
+.ant-input, 
+.ant-input-password input {
+  background: rgba(255, 255, 255, 0.2) !important;
+  border: none !important;
+  color: #0f0a0a !important;
+  height: 40px;
+  border-radius: 10px !important;
+  backdrop-filter: blur(5px);
+}
+
+.ant-input::placeholder {
+  color: #e4e4e4 !important;
+}
+
+/* Password Icon */
+.ant-input-password-icon {
+  color: #fff !important;
+}
+
+/* Checkbox */
+.ant-checkbox-inner {
+  background: transparent !important;
+  border: 1px solid #ccc !important;
+}
+
+.ant-checkbox-checked .ant-checkbox-inner {
+  background-color: #1677ff !important;
+}
+
+/* Button */
+.ant-btn-primary {
+  width: 100%;
+  height: 40px;
+  border-radius: 10px;
+  font-weight: 600;
+  font-size: 15px;
+  background: #007bff;
+  transition: 0.3s ease;
+}
+
+.ant-btn-primary:hover {
+  background: #369eff !important;
+  transform: translateY(-3px);
+}
+
+/* Smooth Fade Animation */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
